@@ -1,9 +1,9 @@
 # keras-yolo-for-k210
-##此教程可以完整的在Win完成：制作数据集、训练yolo、转换成k210可用的Kmodel文件
+## 此教程可以完整的在Win完成：制作数据集、训练yolo、转换成k210可用的Kmodel文件
 ![examlpe](https://github.com/TonyZ1Min/yolo-for-k210/blob/master/example.png)   
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
-1# 下载并安装anaconda3
+### 1# 下载并安装anaconda3
    Official Website：https://www.anaconda.com/distribution/#download-section
    
    建议从镜像下载：https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2020.02-Windows-x86_64.exe 
@@ -14,7 +14,8 @@
    
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
-2# 下载此工程，在工程根目录下将[train_ann.zip]和[train_img.zip]解压到当前文件夹
+### 2# 下载工具 
+   下载此工程，在工程根目录下将[train_ann.zip]和[train_img.zip]解压到当前文件夹
 
    下载ncc工具箱：https://pan.baidu.com/s/1NT2tG4Rv2YJyjOKRh-3t4w  提取码：z9fr
    
@@ -22,7 +23,7 @@
         
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
-3# 准备环境 
+### 3# 准备环境 
 
    Anaconda 命令行，进入工程根目录：
    
@@ -40,12 +41,13 @@
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
 
-4# 在[configs.json]中修改网络类型，标签，和其他参数 注意存放图片(train_img)和存放注释(train_ann)的文件夹名称
+### 4# 修改参数
+   在[configs.json]中修改网络类型，标签，和其他参数 注意存放图片(train_img)和存放注释(train_ann)的文件夹名称
    
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
  
-5# 如果只有自己的样本图片，还没有注释文件，使用根目录下的[labelImg.exe]进行注释：
+### 5# 如果只有自己的样本图片，还没有注释文件，使用根目录下的[labelImg.exe]进行注释：
 
     先将图片放在train_img文件夹
     
@@ -60,21 +62,24 @@
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
  
-6# 开始训练：[(yolo) $ python train.py -c configs.json]   
+### 6# 开始训练：
+   [(yolo) $ python train.py -c configs.json]   
 
    等待训练结束，会出现时间命名的文件夹，里面的tflite文件就是训练好的模型,重命名(如：test.tflite)并复制到工程根目录
    
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
     
-7# 转换成Kmodel：[(yolo) $ ncc_0.1_win\ncc test.tflite test.kmodel -i tflite -o k210model --dataset train_img]
+### 7# 转换成Kmodel：
+   [(yolo) $ ncc_0.1_win\ncc test.tflite test.kmodel -i tflite -o k210model --dataset train_img]
 
    转换完成根目录会出现test.kmodel，即可烧录进k210中运行
    
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
    
-8# maixpy程序见(maixpy_code)文件夹，如有修改configs记得修改对应的archor、图像大小(224*224)、lable
+### 8# 运行
+   maixpy程序见(maixpy_code)文件夹，如有修改configs记得修改对应的archor、图像大小(224*224)、lable
 
 ## Copyright
 
