@@ -29,13 +29,13 @@
    *中国地区建议先给anaconda和pip换源,参照：https://blog.csdn.net/leviopku/article/details/80113021
    
    新建环境： 
-   [conda create -n yolo python=3.6]
+   [$ conda create -n yolo python=3.6]
    
    激活环境： 
-   [conda activate yolo]
+   [$ conda activate yolo]
    
    安装必要软件包： 
-   [pip install -r requirements.txt]
+   [(yolo) $ pip install -r requirements.txt]
       
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
@@ -60,14 +60,14 @@
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
  
-6# 开始训练：[python train.py -c configs.json]   
+6# 开始训练：[(yolo) $ python train.py -c configs.json]   
 
    等待训练结束，会出现时间命名的文件夹，里面的tflite文件就是训练好的模型,重命名(如：test.tflite)并复制到工程根目录
    
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
     
-7# 转换成Kmodel：[ncc_0.1_win\ncc test.tflite test.kmodel -i tflite -o k210model --dataset train_img]
+7# 转换成Kmodel：[(yolo) $ ncc_0.1_win\ncc test.tflite test.kmodel -i tflite -o k210model --dataset train_img]
 
    转换完成根目录会出现test.kmodel，即可烧录进k210中运行
    
