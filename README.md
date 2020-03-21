@@ -1,6 +1,8 @@
 # keras-yolo-for-k210
 ## 此教程可以完整的在Win完成：制作数据集、训练yolo、转换成k210可用的Kmodel文件
-![examlpe](https://github.com/TonyZ1Min/yolo-for-k210/blob/master/example.png)   
+![examlpe](https://github.com/TonyZ1Min/yolo-for-k210/blob/master/example.png)  
+
+
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
 ### 1# 下载并安装anaconda3
@@ -43,6 +45,7 @@
 
 ### 4# 修改参数
    在[configs.json]中修改网络类型，标签，和其他参数 注意存放图片(train_img)和存放注释(train_ann)的文件夹名称
+   ![examlpe](https://github.com/TonyZ1Min/yolo-for-k210/blob/master/cfg.png)
    
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
