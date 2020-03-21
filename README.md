@@ -5,7 +5,7 @@
 1# 下载并安装anaconda3
    Official Website：https://www.anaconda.com/distribution/#download-section
    
-   中国地区建议从镜像下载：https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2020.02-Windows-x86_64.exe 
+   建议从镜像下载：https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2020.02-Windows-x86_64.exe 
    
    *(安装时记得勾选 【Add Anaconda3 to my PATH environment variable】)
    
