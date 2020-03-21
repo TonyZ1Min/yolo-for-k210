@@ -44,5 +44,5 @@ Train, Convert, Run Yolo on K210 (on Windows)
 7# 转换成Kmodel：[ncc_0.1_win\ncc test.tflite test.kmodel -i tflite -o k210model --dataset train_img]
    转换完成根目录会出现test.kmodel，即可烧录进k210中运行
    
-8# maixpy程序见(maixpy_code)文件夹，记得修改archor、图像大小(224*224)、lable
+8# maixpy程序见(maixpy_code)文件夹，如有修改configs记得修改对应的archor、图像大小(224*224)、lable
   
