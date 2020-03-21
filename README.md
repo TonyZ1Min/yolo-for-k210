@@ -1,5 +1,5 @@
 # keras-yolo-for-k210
-此教程可以完整的在Win完成：制作数据集、训练yolo、转换成k210可用的Kmodel文件
+##此教程可以完整的在Win完成：制作数据集、训练yolo、转换成k210可用的Kmodel文件
 ![examlpe](https://github.com/TonyZ1Min/yolo-for-k210/blob/master/example.png)   
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
@@ -75,4 +75,8 @@
 
    
 8# maixpy程序见(maixpy_code)文件夹，如有修改configs记得修改对应的archor、图像大小(224*224)、lable
-  
+
+## Copyright
+
+* See [LICENSE](LICENSE) for details.
+* This project started at [basic-yolo-keras](https://github.com/experiencor/basic-yolo-keras).    
