@@ -16,7 +16,7 @@
 
 2# 下载此工程，在工程根目录下将[train_ann.zip]和[train_img.zip]解压到当前文件夹
 
-   下载ncc工具箱：
+   下载ncc工具箱：https://pan.baidu.com/s/1NT2tG4Rv2YJyjOKRh-3t4w  提取码：z9fr
    
    将[ncc_0.1_win.zip]放置在工程根目录，解压到当前文件夹
         
