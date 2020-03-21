@@ -1,9 +1,9 @@
 {
     "model" : {
-        "architecture":         "MobileNet",                              # "Tiny Yolo" or  "MobileNet"
-        "input_size":           224,                                              # "MobileNet" £º224 only | "Tiny Yolo"£º224 / 416
-        "anchors":              [1, 1.2, 2, 3, 4, 3, 6, 4, 5, 6.5],       #  make sure that [anchor] in maixpy exactly the same as here 
-        "labels":               ["raccoon"],                                    #  your lable names 
+        "architecture":         "MobileNet",                              
+        "input_size":           224,                                     
+        "anchors":              [1, 1.2, 2, 3, 4, 3, 6, 4, 5, 6.5],        
+        "labels":               ["raccoon"],                             
         "coord_scale" : 		1.0,
         "class_scale" : 		1.0,
         "object_scale" : 	5.0,
@@ -14,8 +14,8 @@
     },
     "train" : {
         "actual_epoch":         30,
-        "train_image_folder":   "train_img",                 #     folder for training images             
-        "train_annot_folder":   "train_ann",                  #     folder for training annotations  
+        "train_image_folder":   "train_img",                            
+        "train_annot_folder":   "train_ann",                   
         "train_times":          2,
         "valid_image_folder":   "",
         "valid_annot_folder":   "",
