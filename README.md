@@ -1,6 +1,6 @@
 # keras-yolo-for-k210
 此教程可以完整的在Win完成：制作数据集、训练yolo、转换成k210可用的Kmodel文件
-   
+![examlpe](https://github.com/TonyZ1Min/yolo-for-k210/blob/master/example.png)   
 -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*- 
 
 1# 下载并安装anaconda3
