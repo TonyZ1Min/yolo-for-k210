@@ -176,7 +176,7 @@ def _create_callbacks(saved_weights_name, train_date):
     # Make a few callbacks
     early_stop = EarlyStopping(monitor='val_loss', 
                        min_delta=0.001, 
-                       patience=20, 
+                       patience=50, 
                        mode='min', 
                        verbose=1,
                        restore_best_weights=True)
@@ -187,6 +187,6 @@ def _create_callbacks(saved_weights_name, train_date):
                                  mode='min', 
                                  period=1)
     reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2,
-                              patience=5, min_lr=0.00001,verbose=1)
+                              patience=50, min_lr=0.00001,verbose=1)
     callbacks = [early_stop, checkpoint, reduce_lr]
     return callbacks
